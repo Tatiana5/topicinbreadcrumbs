@@ -1,1 +1,1 @@
-<!-- IF TOPIC_TITLE and U_TOPIC --><span class="crumb"{$MICRODATA}><a href="{U_TOPIC}" itemprop="url"><span itemprop="title">{TOPIC_TITLE}</span></a></span><!-- ENDIF -->
+<!-- IF TOPIC_TITLE and U_VIEW_TOPIC --><span class="crumb" {{ MICRODATA }} data-topic-id="{{ TOPIC_ID }}"><a itemprop="item" href="{{ U_VIEW_TOPIC }}"><span itemprop="name">{{ TOPIC_TITLE }}</span></a><meta itemprop="position" content="{{ navlink_position }}{% set navlink_position = navlink_position + 1 %}" /></span><!-- ENDIF -->
